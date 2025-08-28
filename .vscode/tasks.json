@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build sphinx",
+            "type": "shell",
+            "command": "${workspaceFolder}\\.venv\\Scripts\\sphinx-autobuild.exe",
+            "args": [
+                "ami-3-databases/source",
+                "ami-3-databases/build/html",
+                "--open-browser",
+                "--port",
+                "8000"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
